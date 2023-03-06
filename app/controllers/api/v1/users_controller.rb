@@ -1,5 +1,5 @@
 class Api::V1::UsersController < ApplicationController
-    before_action :set_user, only: [:show, :update]
+    before_action :set_user, only: [:show, :update, :destroy]
 
 
     def create
@@ -23,6 +23,10 @@ class Api::V1::UsersController < ApplicationController
         end
     end
 
+    def destroy
+        @user.destroy
+        head :no_content
+    end
 
     private
     def user_params

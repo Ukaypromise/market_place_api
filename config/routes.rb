@@ -4,7 +4,7 @@ namespace :api, default: {format: :json} do
 
   namespace :v1 do
       # All resources defined here.
-      resources :users, only: [:show, :create, :update, :destroy]
+      resources :users, only: %i[show create update destroy]
   end
 
 end
