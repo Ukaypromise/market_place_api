@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       # All resources defined here.
       resources :users, only: %i[show create update destroy]
       resources :tokens, only: %i[create]
+      resources :products, only: [:show, :index]
     end
   end
 end
