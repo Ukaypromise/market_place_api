@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       # All resources defined here.
       resources :users, only: %i[show create update destroy]
+      resources :tokens, only: %i[create]
     end
   end
 end
