@@ -29,15 +29,15 @@ module Api
         assert_response :unprocessable_entity
       end
 
-      test "should update user" do
-          patch api_v1_user_url(@user),
-          params: { user: { email: @user.email } },
-          headers: { Authorization: JsonWebToken.encode(user_id: @user.id) },
-          as: :json
+      test 'should update user' do
+        patch api_v1_user_url(@user),
+              params: { user: { email: @user.email } },
+              headers: { Authorization: JsonWebToken.encode(user_id: @user.id) },
+              as: :json
         assert_response :success
       end
 
-      test "should forbid update user" do
+      test 'should forbid update user' do
         patch api_v1_user_url(@user), params: { user: { email: @user.email } }, as: :json
         assert_response :forbidden
       end
@@ -47,14 +47,14 @@ module Api
         assert_response :forbidden
       end
 
-      test "should destroy user" do
+      test 'should destroy user' do
         assert_difference('User.count', -1) do
           delete api_v1_user_url(@user), headers: { Authorization: JsonWebToken.encode(user_id: @user.id) }, as: :json
         end
         assert_response :no_content
       end
-      
-      test "should forbid destroy user" do
+
+      test 'should forbid destroy user' do
         assert_no_difference('User.count') do
           delete api_v1_user_url(@user), as: :json
         end
