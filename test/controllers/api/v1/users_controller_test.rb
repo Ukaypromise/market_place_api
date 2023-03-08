@@ -60,7 +60,6 @@ module Api
         end
         assert_response :forbidden
       end
-      
     end
   end
 end
