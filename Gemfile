@@ -50,3 +50,5 @@ end
 gem 'faker', '~> 3.1'
 
 gem "jsonapi-serializer", "~> 2.2"
+
+gem "rack-cors", "~> 2.0"
