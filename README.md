@@ -1,24 +1,127 @@
-# README
+<a name="readme-top"></a>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 📖 Market_Place API <a name="about-project"></a>
 
-Things you may want to cover:
 
-* Ruby version
+### Developed with Ruby on Rails to create an API for an ecommerce market APP.
+# 📗 Table of Contents
 
-* System dependencies
 
-* Configuration
+## 🛠 Built With <a name="built-with">Ruby on Rails</a>
 
-* Database creation
+### Tech Stack <a name="tech-stack"></a>
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
 
-* Deployment instructions
+<summary>Ruby on Rails</summary>
+  <ul>
+    <li><a href="/">Ruby on Rails</a></li>
+  </ul>
+</details>
 
-* ...
+
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+Make sure you have installed locally:
+[] Ruby 
+[] Nodejs
+[] Postgres
+[] Rails
+
+<!--
+Example command:
+
+```sh
+ gem install rails
+```
+ -->
+
+### Setup
+
+Clone this repository to your desired folder 
+
+Execute on console making sure you are in the correct directory:
+```sh
+bundle install
+```
+
+-create a file named application.yml under config folder and write the following Variables:
+```sh
+USER_NAME = “xxx” (xxx replace with your Postgres user name)
+PASSWORD = “xxx” (xxx replace with your Postgres password)
+```
+-On console execute
+```sh
+rails db:create
+rails db:migrate
+rails db:seed
+```
+
+-Create Master key:
+```sh
+EDITOR="mate --wait" bin/rails credentials:edit
+```
+```sh
+rails s
+```
+
+
+## Testing
+You may test by executing:
+
+rails test
+ 
+
+
+## API documentation
+
+Not available yet!!!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+
+
+👤 **Promise Uka **
+
+- GitHub: [Ukaypromise](https://github.com/Ukaypromise)
+- Twitter: [@PromiseUkay](https://twitter.com/PromiseUkay)
+- LinkedIn: [Promiseuka](https://www.linkedin.com/in/promiseuka/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT.md) licensed.
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
