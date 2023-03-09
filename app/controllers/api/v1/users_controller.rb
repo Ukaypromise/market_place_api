@@ -13,8 +13,12 @@ module Api
         end
       end
 
+      # def show
+      #   render json: UserSerializer.new(@user).serializable_hash.to_json
+      # end
       def show
-        render json: UserSerializer.new(@user).serializable_hash.to_json
+        options = { include: [:products] }
+        render json: UserSerializer.new(@user, options).serializable_hash.to_json
       end
 
       def update
